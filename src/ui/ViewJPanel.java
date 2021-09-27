@@ -513,7 +513,7 @@ public class ViewJPanel extends javax.swing.JPanel {
        ImageIcon photo = new ImageIcon(usephoto);
        
       
-       lblPhoto.setBounds(708,300, 708, 300);
+       lblPhoto.setBounds(0,0, 708, 300);
        Image displayphoto = photo.getImage();
        Image imgFit = displayphoto.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
        ImageIcon scaledIcon = new ImageIcon(imgFit);

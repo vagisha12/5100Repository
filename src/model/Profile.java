@@ -13,13 +13,12 @@ import javax.validation.constraints.Email;
  * @author vagishadeo
  */
 public class Profile {
-    @NotNull(message = "Name cannot be null")
+    
     private String name;
     private String geo_data;
-    private String dob;
+    private String dob; 
     private String tele;
-    private String fax;
-    @Email(message = "Email should be valid")
+    private String fax;  
     private String email;
     private String ssn;
     private String  media;
@@ -33,7 +32,7 @@ public class Profile {
     private String biometric;
     private String photo;
     private String unique_identify;
-
+    
     public String getName() {
         return name;
        
@@ -41,6 +40,7 @@ public class Profile {
 
     public void setName(String name) {
         this.name = name;
+        
     }
 
     public String getGeo_data() {

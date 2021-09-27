@@ -118,6 +118,7 @@ public class MainJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         ViewJPanel viewPanel = new  ViewJPanel(profile);
         SplitPane.setRightComponent(viewPanel);
+        
     }//GEN-LAST:event_btnViewActionPerformed
 
     /**

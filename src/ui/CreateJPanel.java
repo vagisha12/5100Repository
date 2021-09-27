@@ -469,6 +469,26 @@ public class CreateJPanel extends javax.swing.JPanel {
     private void butnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butnSaveActionPerformed
 
        // TODO add your handling code here:
+       String ID=butnSave.getText().toString();
+       boolean condition = true;
+       
+        
+       if(txtName.getText().length() == 0)
+       { 
+            JOptionPane.showMessageDialog(this, "Name is a mandatory field");
+            condition= false;
+            return;
+        }
+       if(txtSSN.getText().length() != 9)
+       {
+           JOptionPane.showMessageDialog(this, "SSN has to be of 9 digits");
+            condition= false;
+            return; 
+       }
+       
+       if(condition)
+       {
+       
        profile.setName(txtName.getText());
        profile.setGeo_data(txtGeo.getText());
        profile.setDob(txtDOB.getText());
@@ -491,7 +511,7 @@ public class CreateJPanel extends javax.swing.JPanel {
        JOptionPane.showMessageDialog(null,"Profile Information Saved");
                
        
-       
+    }
        
     }//GEN-LAST:event_butnSaveActionPerformed
 
