@@ -492,7 +492,7 @@ public class CreateJPanel extends javax.swing.JPanel {
        profile.setName(txtName.getText());
        profile.setGeo_data(txtGeo.getText());
        profile.setDob(txtDOB.getText());
-       profile.setTele(txtTelephone.getText());
+       profile.setTele(txtTelephone.getText());   
        profile.setFax(txtFax.getText());
        profile.setEmail(txtEmail.getText());
        profile.setSsn(txtSSN.getText());

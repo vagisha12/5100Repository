@@ -508,17 +508,20 @@ public class ViewJPanel extends javax.swing.JPanel {
        txtIP.setText(profile.getProtocol());
        txtBiometric.setText(profile.getBiometric());
        txtPhoto.setText(profile.getPhoto());
+       txtUnique.setText(profile.getUnique_identify());
+       
        String usephoto = profile.getPhoto();
        
        ImageIcon photo = new ImageIcon(usephoto);
-       
-      
+
        lblPhoto.setBounds(0,0, 708, 300);
        Image displayphoto = photo.getImage();
-       Image imgFit = displayphoto.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
-       ImageIcon scaledIcon = new ImageIcon(imgFit);
-       lblPhoto.setIcon(scaledIcon);
-       txtUnique.setText(profile.getUnique_identify());
+       Image picture = displayphoto.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
+       ImageIcon edited = new ImageIcon(picture);
+       lblPhoto.setIcon(edited);
+       
+       
+      
        
         
     }
